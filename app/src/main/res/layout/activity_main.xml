@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background_main_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:foreground="#B3FFFFFF"
+        android:scaleType="centerCrop"
+        android:tintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/house_congress" />
+
+    <TextView
+        android:id="@+id/header_1"
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="@string/main_view_textView1"
+        android:textColor="#BF000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomBanner"
+        app:layout_constraintVertical_bias="0.025" />
+    <!--     banner    -->
+    <LinearLayout
+        android:id="@+id/CustomBanner"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@mipmap/banner_layout_seal_round" />
+
+        <TextView
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="end|center_vertical"
+            android:text="@string/main_view_banner"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <!--   END banner -->
+
+    <!--///////////////////////////// Location Block      -->
+
+    <TextView
+        android:id="@+id/textView_shareLocation"
+        android:layout_width="213dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/raleway_bold_italic"
+        android:gravity="center"
+        android:text="@string/share_location"
+        android:textColor="#A6000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_1" />
+
+    <ImageButton
+        android:id="@+id/share_button_map"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="#B31F2525"
+        android:backgroundTintMode="src_in"
+        android:elevation="100dp"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/us_map_share_button_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_shareLocation" />
+
+    <ImageView
+        android:id="@+id/share_button_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="false"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/share_button_map"
+        app:layout_constraintEnd_toEndOf="@+id/share_button_map"
+        app:layout_constraintStart_toStartOf="@+id/share_button_map"
+        app:layout_constraintTop_toBottomOf="@+id/textView_shareLocation"
+        app:srcCompat="@mipmap/share_button_arrow_foreground"
+        app:tint="#DEF8F6F6" />
+    <!--    END Location    -->
+
+    <TextView
+        android:id="@+id/textView_OR"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/or_common"
+        android:textAlignment="center"
+        android:textColor="#B3000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <!--////////////////////////////// ZIP group     -->
+    <TextView
+        android:id="@+id/textView_shareZip"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/raleway_bold_italic"
+        android:gravity="center"
+        android:text="@string/enter_zip"
+        android:textColor="#A6000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_OR" />
+
+    <EditText
+        android:id="@+id/editText_ZIP"
+        android:layout_width="147dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/input_box"
+        android:defaultFocusHighlightEnabled="true"
+        android:fontFamily="@font/roboto"
+        android:hint="5 digit code"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_shareZip"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <!--    END zip block   -->
+
+    <Button
+        android:id="@+id/buttonZip"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/go_button_zip"
+        android:elevation="100dp"
+        android:fontFamily="@font/roboto_bold"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Go"
+        android:textColor="#FAF19F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toEndOf="@+id/editText_ZIP"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/textView_OR2"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/or_common"
+        android:textAlignment="center"
+        android:textColor="#B3000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_ZIP" />
+
+    <!--    Address group   -->
+    <TextView
+        android:id="@+id/textView_shareAddress"
+        android:layout_width="194dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/raleway_bold_italic"
+        android:gravity="center"
+        android:text="@string/enter_address"
+        android:textColor="#A6000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_OR2" />
+
+    <EditText
+        android:id="@+id/editText_address1"
+        android:layout_width="190dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/input_box"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/address_line1"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_shareAddress" />
+
+    <EditText
+        android:id="@+id/editText_address2"
+        android:layout_width="190dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/input_box"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/address_line2"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_address1" />
+
+    <EditText
+        android:id="@+id/editText_city"
+        android:layout_width="139dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/input_box"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/address_city"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_address2" />
+
+    <EditText
+        android:id="@+id/editText_state"
+        android:layout_width="50dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/input_box"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/address_state"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:maxLength="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editText_city"
+        app:layout_constraintTop_toBottomOf="@+id/editText_address2" />
+
+    <!--    END address block   -->
+
+    <Button
+        android:id="@+id/buttonAddress"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/go_button_zip"
+        android:text="GO"
+        android:textColor="#FAF19F"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editText_address2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <!--    Wild Card Group     -->
+    <TextView
+        android:id="@+id/textView_OR3"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/or_common"
+        android:textAlignment="center"
+        android:textColor="#B3000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_state" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="52dp"
+        android:layout_height="26dp"
+        android:clickable="false"
+        android:fontFamily="@font/luckiest_guy"
+        android:rotation="90"
+        android:text="@string/card"
+        android:textAlignment="center"
+        android:textColor="#D92753EF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="51dp"
+        android:layout_height="24dp"
+        android:clickable="false"
+        android:fontFamily="@font/luckiest_guy"
+        android:rotation="270"
+        android:text="@string/wild"
+        android:textAlignment="center"
+        android:textColor="#D9F12323"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932" />
+
+    <ImageButton
+        android:id="@+id/wildCard"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:elevation="100dp"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_OR3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/wild_card_button" />
+
+    <!--    END wild card group     -->
+</androidx.constraintlayout.widget.ConstraintLayout>

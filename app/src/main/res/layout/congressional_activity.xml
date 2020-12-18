@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CongressionalActivity">
+
+
+    <View
+        android:id="@+id/dividerRight"
+        android:layout_width="160dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="317dp"
+        android:background="#FF0F0F"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+
+    <View
+        android:id="@+id/dividerLeft"
+        android:layout_width="160dp"
+        android:layout_height="4dp"
+        android:layout_marginEnd="257dp"
+        android:background="#FF0F0F"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="544dp"
+        android:layout_height="245dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:foreground="#B3FFFFFF"
+        android:scaleType="centerCrop"
+        android:tintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dividerLeft"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/congress_floor_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:foreground="#B3FFFFFF"
+        android:scaleType="centerCrop"
+        android:tintMode="src_atop"
+        app:layout_constraintBottom_toTopOf="@+id/dividerRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomBanner_congress"
+        app:layout_constraintVertical_bias="0.61"
+        app:srcCompat="@mipmap/senate_floor_foreground" />
+
+    <LinearLayout
+        android:id="@+id/CustomBanner_congress"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="left"
+            android:src="@mipmap/banner_layout_seal_round" />
+
+        <TextView
+            android:layout_width="315dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="end|center_vertical"
+            android:text="@string/congressional_view_banner"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <!--   END banner -->
+
+
+    <ImageView
+        android:id="@+id/imageView_A3"
+        android:layout_width="115dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="196dp"
+        android:background="@drawable/photo_shape"
+        android:backgroundTint="#B31F2525"
+        android:elevation="100dp"
+        android:outlineProvider="background"
+        android:scaleType="centerCrop"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/na_photo_foreground" />
+
+    <TextView
+        android:id="@+id/textView_a"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="109dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Senator"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/imageView_A3"
+        app:layout_constraintTop_toTopOf="@+id/CustomBanner_congress"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <TextView
+        android:id="@+id/textView_A0"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Chuck the Duck"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/imageView_A3"
+        app:layout_constraintTop_toTopOf="@+id/imageView_A3" />
+
+    <TextView
+        android:id="@+id/textView_A2"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="@string/click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/imageView_A3"
+        app:layout_constraintTop_toBottomOf="@+id/textView_A1" />
+
+    <TextView
+        android:id="@+id/textView_A1"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Republican"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toEndOf="@+id/imageView_A3"
+        app:layout_constraintTop_toBottomOf="@+id/textView_A0" />
+
+    <TextView
+        android:id="@+id/textView_B2"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="@string/click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/imageView_B3"
+        app:layout_constraintTop_toTopOf="@+id/textView_B1" />
+
+    <TextView
+        android:id="@+id/textView_b"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Senator"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/imageView_B3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_A3" />
+
+    <ImageView
+        android:id="@+id/imageView_B3"
+        android:layout_width="115dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/photo_shape"
+        android:elevation="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/dividerRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_A3"
+        app:layout_constraintVertical_bias="0.181"
+        app:srcCompat="@mipmap/na_photo_foreground" />
+
+    <TextView
+        android:id="@+id/textView_B0"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_B3"
+        app:layout_constraintTop_toTopOf="@+id/imageView_B3" />
+
+    <TextView
+        android:id="@+id/textView_B1"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/imageView_B3"
+        app:layout_constraintTop_toBottomOf="@+id/textView_B0" />
+
+    <TextView
+        android:id="@+id/textView_c"
+        android:layout_width="168dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Representative"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_C3"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+    <TextView
+        android:id="@+id/textView_C0"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Alexandria Ocasio Cortez"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_C3"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <TextView
+        android:id="@+id/textView_C1"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_C3"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <TextView
+        android:id="@+id/textView_C2"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="@string/click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_C3"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
+
+    <ImageView
+        android:id="@+id/imageView_C3"
+        android:layout_width="115dp"
+        android:layout_height="140dp"
+        android:background="@drawable/photo_shape"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerRight"
+        app:layout_constraintVertical_bias="0.385"
+        app:srcCompat="@mipmap/na_photo_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_C3"
+        app:layout_constraintEnd_toStartOf="@+id/dividerRight"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/dividerLeft"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_B3"
+        app:layout_constraintVertical_bias="0.58000004"
+        app:srcCompat="@mipmap/red_star_foreground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

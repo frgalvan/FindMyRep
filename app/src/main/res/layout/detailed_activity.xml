@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/dividerRight"
+        android:layout_width="160dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="317dp"
+        android:background="#FF0F0F"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+
+    <View
+        android:id="@+id/dividerLeft"
+        android:layout_width="160dp"
+        android:layout_height="4dp"
+        android:layout_marginEnd="257dp"
+        android:background="#FF0F0F"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659" />
+
+    <ImageView
+        android:id="@+id/detailed_background"
+        android:layout_width="match_parent"
+        android:layout_height="578dp"
+        android:layout_marginTop="8dp"
+        android:foreground="#B3FFFFFF"
+        android:scaleType="centerCrop"
+        android:tintMode="src_atop"
+        android:translationY="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_senator"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/senate_floor_foreground" />
+
+    <ImageView
+        android:id="@+id/photoA2"
+        android:layout_width="183dp"
+        android:layout_height="209dp"
+        android:background="@drawable/photo_shape"
+        android:scaleType="centerCrop"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/detailed_background"
+        app:layout_constraintVertical_bias="0.005"
+        app:srcCompat="@mipmap/na_photo_foreground" />
+
+    <TextView
+        android:id="@+id/textV_moreInfoA2"
+        android:layout_width="94dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="Contact"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66999996" />
+
+    <TextView
+        android:id="@+id/textView_a2"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="252dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Representative"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_senator" />
+
+    <TextView
+        android:id="@+id/textV_partyA2"
+        android:layout_width="231dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textV_senatorName"
+        android:layout_width="345dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Dianne Fienstein"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoA2"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <LinearLayout
+        android:id="@+id/banner_senator"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/senator_seal"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="left"
+            android:src="@mipmap/house_seal_foreground"/>
+
+        <TextView
+            android:id="@+id/banner_text"
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="end|center_vertical"
+            android:text="@string/senator_banner"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textV_senatorPhone"
+        android:layout_width="250dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/raleway_bold_italic"
+        android:gravity="center"
+        android:text="@string/website"
+        android:textSize="27dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textV_moreInfoA2"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/textV_senatorWebsite"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/raleway_bold_italic"
+        android:gravity="center"
+        android:text="@string/website"
+        android:textSize="20dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textV_senatorPhone"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerLeft"
+        app:layout_constraintVertical_bias="0.74"
+        app:srcCompat="@mipmap/twitter_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerRight"
+        app:layout_constraintVertical_bias="0.86"
+        app:srcCompat="@mipmap/youtube_foreground" />
+    <!--   END banner -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

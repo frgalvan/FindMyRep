@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Prog02-FindMyRep</string>
+    <string name="main_view_banner">Find My Rep!   </string>
+    <string name="congressional_view_banner">My Representatives  </string>
+    <string name="senator_banner">Senator</string>
+    <string name="main_view_textView1">Let\'s find your Congressional Representatives!</string>
+    <string name="or_common">OR</string>
+    <string name="share_location">Share your location</string>
+    <string name="enter_zip">Enter your ZIP</string>
+    <string name="enter_address">Enter your address</string>
+    <string name="address_line1">Address line 1</string>
+    <string name="address_line2">Address line 2</string>
+    <string name="address_city">City</string>
+    <string name="address_state">State</string>
+    <string name="wild">Wild</string>
+    <string name="card">Card</string>
+    <string name="click"><u>Click Here for More Info</u></string>
+    <string name="website"><u>textView</u></string>
+</resources>

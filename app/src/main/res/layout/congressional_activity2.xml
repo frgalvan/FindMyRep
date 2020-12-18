@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/detailed_background"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        android:foreground="#B3FFFFFF"
+        android:scaleType="centerCrop"
+        android:tintMode="src_atop"
+        android:translationY="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomBanner_congress"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/senate_floor_foreground" />
+
+    <LinearLayout
+        android:id="@+id/CustomBanner_congress"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="left"
+            android:src="@mipmap/senator_seal_foreground"/>
+
+        <TextView
+            android:layout_width="318dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/raleway_semibold"
+            android:gravity="end|center_vertical"
+            android:text="@string/congressional_view_banner"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <!--   END banner -->
+
+
+    <ImageView
+        android:id="@+id/photoA"
+        android:layout_width="135dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/photo_shape"
+        android:elevation="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomBanner_congress"
+        app:srcCompat="@mipmap/na_photo_foreground" />
+
+    <TextView
+        android:id="@+id/textView_a"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Senator"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_a3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/photoA"
+        app:layout_constraintTop_toBottomOf="@+id/CustomBanner_congress"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textV_nameA"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Dianne Fienstein"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/photoA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/textView_a3"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Senator"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toEndOf="@+id/photoB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <TextView
+        android:id="@+id/textV_partyB"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/photoB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <TextView
+        android:id="@+id/textV_moreInfoB"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="@string/click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/photoB"
+        app:layout_constraintTop_toBottomOf="@+id/textV_partyB"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <TextView
+        android:id="@+id/textV_nameB"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="Dianne Fienstein"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/photoB"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <ImageView
+        android:id="@+id/photoB"
+        android:layout_width="135dp"
+        android:layout_height="175dp"
+        android:background="@drawable/photo_shape"
+        android:elevation="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoA"
+        app:layout_constraintVertical_bias="0.42"
+        app:srcCompat="@mipmap/na_photo_foreground" />
+
+    <TextView
+        android:id="@+id/textV_partyA"
+        android:layout_width="150dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toEndOf="@+id/photoA"
+        app:layout_constraintTop_toBottomOf="@+id/CustomBanner_congress" />
+
+    <TextView
+        android:id="@+id/textV_moreInfoA"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:gravity="center"
+        android:text="@string/click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/photoA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
